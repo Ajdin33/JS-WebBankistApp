@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+
+        <title>BankApp</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="loginMessage">Please log in to get started</div>
+
+            <div class="user">
+                <input type="text" placeholder="user" maxlength="5" class="userLogin" />
+            </div>
+
+            <div class="pinCode">
+                <input type="text" placeholder="PIN" maxlength="4" class="pinLogin" />
+            </div>
+
+            <div class="submit">&rarr;</div>
+        </div>
+
+        <div class="bankWrapper">
+            <div class="welcomeMessage">Welcome back, <span id="welcomeName"></span>!</div>
+
+            <div class="container">
+                <div class="balance">
+                    <div class="balanceText">Current balance</div>
+                    <div class="balanceNum"></div>
+                </div>
+
+                <div class="data">
+                    <div class="dataLeft">
+                        <div class="info">
+                            <div class="action deposit"></div>
+                            <div class="date">4/11/2022</div>
+                            <div class="transfer"></div>
+                        </div>
+                    </div>
+
+                    <div class="dataRight">
+                        <div class="moneyTranfer">
+                            <div class="transferText">Transfer money</div>
+
+                            <div class="transferInput">
+                                <input class="clientNN" type="text" maxlength="5" placeholder="Enter client" />
+                                <input class="clientAmount" type="number" placeholder="Amount" />
+                                <div class="transferSubmit">&rarr;</div>
+                            </div>
+                        </div>
+
+                        <div class="reqLoan">
+                            <div class="transferText">Request loan</div>
+
+                            <div class="transferInput">
+                                <input class="clientAmount" id="reqLoan" type="number" placeholder="Amount" />
+                                <div class="note">note!</div>
+                                <div class="loanSubmit">&rarr;</div>
+                            </div>
+                        </div>
+                        <div class="closeAcc">
+                            <div class="transferText">Close account</div>
+
+                            <div class="transferInput">
+                                <input class="clientNN" id="workJS" type="text" maxlength="5" placeholder="Enter user" />
+                                <input class="clientAmount" id="workJS--2" type="number" placeholder="Enter pincode" />
+                                <div class="closeSubmit">&rarr;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="extraInfo">
+                    <div class="imports">
+                        <p>in <span id="in"></span></p>
+                        <p>out <span id="out"></span></p>
+                        <p>interest <span id="int"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- module for note in which says when can some client get a loan from a bank  -->
+            <div class="noteModel">
+                <div class="close">&#10006;</div>
+                <div class="modelText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque accusamus voluptatibus delectus itaque? Modi, porro nostrum quae quas, quisquam accusantium reprehenderit dolorem voluptates recusandae vel id iure quia nemo quidem!</div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

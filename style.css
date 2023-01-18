@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+/* css of login form */
+.wrapper {
+    width: 100vh;
+    height: 60vh;
+    position: relative;
+    top: 20vh;
+    left: 50vh;
+}
+
+.loginMessage {
+    width: 70%;
+    height: 10vh;
+    position: relative;
+    left: 15%;
+    padding-top: 3vh;
+    text-align: center;
+    letter-spacing: 0.2vh;
+    font-size: 4vh;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+.user,
+.pinCode {
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    top: 5vh;
+}
+
+.userLogin,
+.pinLogin {
+    width: 30%;
+    height: 7vh;
+    position: relative;
+    top: 10%;
+    left: 35%;
+    border: none;
+    border-radius: 10vh;
+    text-align: center;
+    font-size: 3vh;
+    font-family: 'Roboto';
+}
+
+input:focus {
+    outline: none;
+}
+
+.submit {
+    width: 10%;
+    position: relative;
+    top: 10vh;
+    left: 45%;
+    text-align: center;
+    font-size: 6vh;
+    cursor: pointer;
+}
+/* ------------------------------------- */
+/* css of bankApp */
+
+.bankWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+    display: none;
+}
+
+.welcomeMessage {
+    max-width: 100%;
+    min-height: 10vh;
+    padding: 3vh 0 0 3vh;
+    font-size: 4vh;
+    font-family: 'Roboto';
+    font-style: italic;
+}
+
+#welcomeName {
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.2vh;
+    color: red;
+}
+
+.container {
+    max-width: 100%;
+    min-height: 90%;
+}
+
+.balance {
+    max-width: 80%;
+    min-height: 15vh;
+    position: relative;
+    top: 1vh;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.balance > * {
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.balanceText {
+    padding-top: 7vh;
+    font-size: 3vh;
+}
+
+.balanceNum {
+    padding-top: 4vh;
+    font-size: 6vh;
+    font-weight: 500;
+    letter-spacing: 0.3vh;
+}
+
+.data {
+    max-width: 80%;
+    min-height: 55vh;
+    position: relative;
+    left: 10%;
+    display: flex;
+}
+
+.dataLeft {
+    min-width: 60%;
+    max-height: 55vh;
+    background-color: white;
+    overflow-y: scroll;
+    border-radius: 3vh;
+}
+
+.dataLeft > * {
+    min-width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 1vh 0 1vh 0;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.info > * {
+    min-width: 20vh;
+    max-height: 5vh;
+    position: relative;
+    top: 2vh;
+    margin: 0 auto;
+    padding: 0.6vh;
+    text-align: center;
+    font-size: 2.5vh;
+    font-family: 'Oswald';
+}
+
+.action {
+    color: white;
+    border-radius: 5vh;
+    text-transform: uppercase;
+}
+
+.deposit {
+    background-color: rgb(55, 197, 55);
+}
+
+.withdraw {
+    background-color: rgb(255, 6, 6);
+}
+
+.dataRight {
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2vh;
+}
+
+.dataRight > * {
+    min-width: 100%;
+    min-height: 17vh;
+    border-radius: 3vh;
+}
+
+.moneyTranfer {
+    background-color: rgba(255, 167, 3, 0.8);
+}
+
+.moneyTranfer > * {
+    max-width: 100%;
+}
+
+.transferText {
+    text-align: center;
+    font-size: 3vh;
+    font-family: 'Oswald';
+    padding-top: 1vh;
+    letter-spacing: 0.2 vh;
+}
+
+.transferInput {
+    margin-top: 2vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.transferInput input {
+    background-color: none;
+    max-width: 19vh;
+    min-height: 7vh;
+    border: none;
+    border-radius: 3vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 2vh;
+    text-align: center;
+}
+
+.transferSubmit,
+.closeSubmit,
+.loanSubmit {
+    max-width: 10%;
+    text-align: center;
+    font-size: 5vh;
+    cursor: pointer;
+}
+
+.reqLoan {
+    background-color: rgba(55, 197, 55, 0.8);
+}
+
+.note {
+    min-width: 10vh;
+    max-height: 6vh;
+    color: red;
+    font-family: 'Oswald';
+    font-size: 3vh;
+    text-transform: uppercase;
+    letter-spacing: 0.2vh;
+    text-align: center;
+    padding-top: 0.8vh;
+    cursor: pointer;
+}
+
+.noteModel {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border: 3px solid black;
+    background-color: rgb(235, 235, 235);
+    display: none;
+}
+
+.noteModel > * {
+    width: 100%;
+}
+
+.close {
+    position: absolute;
+}
+
+.closeAcc {
+    background-color: rgba(255, 6, 6, 0.8);
+}
+
+.extraInfo {
+    max-width: 80%;
+    min-height: 10vh;
+    position: relative;
+    left: 10%;
+    display: flex;
+}
+
+.extraInfo > * {
+    min-width: 50%;
+    font-family: 'Oswald';
+}
+
+.imports {
+    font-size: 2vh;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-top: 1vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imports span {
+    font-size: 3.5vh;
+    font-weight: 40;
+    margin-left: 0.5vh;
+}
+
+#in,
+#int {
+    color: green;
+}
+
+#out {
+    color: red;
+}
+
+.loginTimeout p {
+    font-size: 2.5vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.loginTimeout span {
+    font-weight: 900;
+}
+/* scroll */
+::-webkit-scrollbar {
+    width: 1vh;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(235, 235, 235);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(92, 92, 92);
+    border-radius: 10vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
